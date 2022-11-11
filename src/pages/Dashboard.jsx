@@ -23,6 +23,10 @@ export default function Dashboard() {
   return (
     <div>
       <DashboardLayout title="Activity">
+      <div className='flex justify-between items-center'>
+          <h1 className='text-2xl font-bold'>Activity</h1>
+          <button className='bg-blue-400 px-2 py-1 rounded-2xl hover:bg-blue-500 text-white'>+ Tambah</button>
+        </div>
         <div className="mx-5">
           {activityData ? (
             <div className="grid grid-cols-4">

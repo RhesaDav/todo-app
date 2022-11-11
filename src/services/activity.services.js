@@ -7,3 +7,7 @@ export const getAllActivity = () => {
 export const getTodoDetail = (id) => {
     return baseApi.get(`/todo-items/${id}`)
 }
+
+export const createTodoItem = (id,data) => {
+    return baseApi.post(`/todo-items/${id}`, data)
+}
