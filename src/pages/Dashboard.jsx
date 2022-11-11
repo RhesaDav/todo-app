@@ -35,7 +35,7 @@ export default function Dashboard() {
                   key={index}
                   className="bg-white m-5 flex flex-col rounded-xl shadow-xl p-4 justify-between"
                 >
-                  <h1 className="font-bold text-xl hover:text-blue-500 hover:underline" onClick={() => navigate(`/list/${item.id}`)}>{item.title}</h1>
+                  <h1 className="font-bold text-xl hover:text-blue-500 cursor-pointer hover:underline" onClick={() => navigate(`/list/${item.id}`)}>{item.title}</h1>
                   <div className="flex mt-24 justify-between items-center">
                     <span className="text-xs text-gray-500">
                       {moment(item.created_at).format("D MMM YYYY")}
